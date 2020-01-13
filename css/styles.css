@@ -1,0 +1,577 @@
+/***************
+General
+****************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Cormorant Garamond', serif;
+	line-height: 1.5;
+	color: #000;
+	background-color: #fff;
+}
+
+/*.main-nav{
+	border-width:5px;  
+    border-style:groove;
+    margin: 0 20% 0 20%;
+
+}*/
+
+
+.introduction{
+	border-width:5px;  
+    border-bottom-style:groove;
+    margin: 0 20% 0 20%;
+}
+
+
+
+
+/*link color. Change this later*/
+a:link {
+	text-decoration: none;
+	font-size: 18px;
+
+}
+
+a {
+	color:#000;
+}
+
+/*unvisited link. Change this later*/
+/*a:link {
+	color:whitesmoke;
+}*/
+
+
+
+/* visited link */
+/* a:visited {
+	color:whitesmoke;
+} */
+
+/*Selected link.Change this later */
+a:active {
+	color:black;
+}
+/*.email a:hover{
+	color:#000;
+}
+.phone a:hover{
+	color:#000;
+}*/
+.resume a {
+	color: #000;
+}
+.resume a:hover{
+	color:coral;
+}
+
+/*#BooZE a:hover{
+	color: yellow;
+}*/
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+/***************
+Navigation
+***************/
+nav {
+  padding: 30px;
+  background-color: #fff;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #1f2227;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+nav ul li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+
+
+.name a {
+	font-size: 72px;
+  	background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*.name {
+	color:#ff8566;
+	text-align: center;
+}*/
+
+/*.main-nav li {
+	background:#cccccc;
+	margin: 5px;
+	list-style: none;
+	max-width: 90%;
+}*/
+
+/*.name a, .main-nav {
+	display: block;
+	text-align: center;
+	padding: 10px 1px;
+	text-decoration: none;
+}*/
+
+/*Change to your own desing*/
+/*.main-nav a {
+	color:#000;
+	text-transform: uppercase;
+}
+*/
+/*Change to your own design*/
+/*.main-nav a:hover {
+	color: tomato;
+}*/
+
+
+
+
+/***************
+Portfolio
+***************/
+
+h1, h2 {
+	text-align: center;
+}
+
+.introduction {
+	text-align: justify;
+	padding: 2%;
+	/*Change this to your own design*/
+	color: #000;
+
+}
+
+.portfolio {
+	background:#fff;
+	display: inline-block;
+}
+
+.portfolio-title {
+	text-align: center;
+}
+
+p{
+	text-align: center;
+
+}
+
+
+/*
+.folders{
+	background-color: #a19c9c;
+  border: none;
+  color: white;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 1px;
+  opacity: .2;
+  transition: 0.2s;
+}
+.folders:hover {opacity: 1} */
+
+
+
+
+
+
+
+
+/***************
+Contact
+***************/
+
+#contact{
+	border-width:5px;  
+    border-top-style:groove;
+    margin: 0 20% 0 20%;
+	
+}
+
+.contact {
+	text-align: justify;
+
+
+}
+
+.phone {
+	text-align: center;
+
+}
+
+.email {
+	text-align: center;
+
+}
+
+.resume {
+	text-align: center;
+
+}
+
+.profile-photo {
+	display:block;
+	max-width: 30%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 50%;
+
+}
+
+
+img {
+	max-width: 85%;
+	display: block;
+	/* margin-left:-20px; */
+	border-radius: 10%;
+
+}
+
+li {
+	list-style: none;
+}
+
+
+
+
+
+/***************
+Footer
+***************/
+
+.border-line {
+	height: 50px;
+	/*Change this border in your design*/
+	border-bottom: 1px solid black;
+}
+
+.studentname-footer{
+	display: inline-block;
+	float: right;
+}
+
+.back-to-top {
+	display: inline-block;
+	float: right;
+	list-style: none;
+
+
+}
+
+.footer-nav a{
+	color:whitesmoke;
+}
+
+.footer-nav a:hover{
+	color:#000;
+	/* display: none; */
+}
+
+
+
+/*Check if good otherwise delete*/
+#foot-li {
+
+	list-style: none;
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+/*********************
+Media Queries Tables
+*********************/
+
+@media screen and (max-width: 560px) {
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1f2227;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  .nav-container ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  .nav-container ul li a {
+    padding: 10px 25px;
+    opacity: 0;
+    color: tomato;
+    font-size: 24px;
+    font-weight: 600;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+  .nav-open {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1f2227;
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+}
+#nav:checked + .nav-open {
+  transform: rotate(45deg);
+}
+#nav:checked + .nav-open i {
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+#nav:checked + .nav-open i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+#nav:checked + .nav-open i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden {
+  display: none;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 5px;
+	}
+
+
+
+	/*.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-right: 1%;
+		margin-left: 2%;
+		background:none;
+
+	}
+
+	.profile-photo {
+		float: left;
+		display: inline-block;
+		max-width: 35%;
+		margin-left: 10%;
+		margin-right: 6%;
+	}*/
+
+	.introduction {
+		float: left;
+		width: 47.5%;
+	}
+
+	.projects li {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+	} */
+
+	 .projects {
+		margin-left: 1%;
+		margin-right: auto;
+
+	}
+
+
+
+	.footer-nav {
+		display: inline-block;
+		list-style-type: none;
+		float: right;
+
+	}
+
+	li {
+		display: inline;
+		padding-right: 20px;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+}
+
+
+
+
+/*********************
+Media Queries Desktop
+*********************/
+
+@media (min-width: 1024px) {
+	.name {
+		float: left;
+		margin: 0 1%;
+		padding: 0 2px;
+	}
+
+	.main-nav {
+		display: inline-block;
+		float: right;
+		min-width: 350px;
+		/* font-size: 25px; */
+	}
+
+	.profile {
+		margin-top: 100px;
+	}
+
+	p {
+		font-size: 18px;
+
+	}
+
+
+
+	/*Problem photo doesn't float right*/
+	.profile-photo {
+		float: right;
+		padding: 1em;
+	}
+
+	.introduction {
+		float: left;
+		font-size: 18px;
+		text-align: justify;
+	}
+
+	.projects li {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+
+	.products {
+		margin-left: 1%;
+		margin-right: auto;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+
+	.folders{
+	  box-shadow: 10px 10px 5px grey;
+	  background: -webkit-linear-gradient(#eee, #333);;
+	  border: none;
+	  color: white;
+	  padding: 1px 4px;
+	  text-align: center;
+	  font-size: 16px;
+	  margin: 1px;
+	  opacity: .2;
+	  transition: 0.2s;
+	}
+	.folders:hover {opacity: 1}
+
+}
